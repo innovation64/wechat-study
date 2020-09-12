@@ -1,0 +1,32 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#ff0",
+    "navigationBarTitleText": "翻牌小程序",
+    "navigationBarTextStyle":"black"
+  },
+
+  "tabBar": {
+    
+    "color": "#ff0000",
+    "selectedColor": "#0000ff",
+    "backgroundColor": "#00ff00",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "翻牌",
+       "iconPath":"/image/index1-1.png",
+       "selectedIconPath":"/image/0.jpg"
+    }, {
+      "pagePath": "pages/logs/logs",
+      "text": "扣牌",
+      "iconPath":"/image/index2-1.png",
+      "selectedIconPath":"/image/1.jpg"
+    }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
