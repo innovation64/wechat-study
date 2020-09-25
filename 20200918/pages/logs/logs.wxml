@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<!-- 整体 -->
+<view class='body'>
+ <!-- 底部的按钮 -->
+ <view class='bottom'>
+ <!-- 通过block和wx:for来循环创建 -->
+ <block wx:for='{{array}}' wx:key="index">
+ <!-- 每一个单元 -->
+ <view class='item {{index<3? "gray":""}} {{(index==3 || index ==7 || index==11 || index == 15 || index == 18)? "orange":""}} {{index==16? "twoItem":""}}' bindtap='bindtap' data-index="{{index}}">{{item}}</view>
+ </block>
+ </view>
+ <!-- 顶部显示结果 -->
+ <view class='end'>
+ <text>{{currentEnd}}</text>
+ </view>
+</view>

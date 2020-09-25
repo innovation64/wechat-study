@@ -1,0 +1,6 @@
+<input placeholder="请输入10以内的数字" placeholder-class="p" bindinput="bindinput" type="number"></input>
+<block wx:for="{{n}}">
+<view wx:if="{{item==value}}">{{item}}={{result}}</view>
+<view wx:if="{{item<value}}">{{item}}*</view>
+</block>
+

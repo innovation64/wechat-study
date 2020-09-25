@@ -1,0 +1,58 @@
+/**index.wxss**/
+.body{
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  /* 使用flex布局 */
+  display: flex;
+  flex-direction: column-reverse;
+ }
+ /* 顶部显示结果 */
+ .end{
+  width: 100%;
+  height: 25%;/* 动态设置 */
+  /* background-color: red;  */
+  position: relative;
+ }
+ .end text{
+  position: absolute;
+  bottom: 0;
+  right: 5px;
+  font-size: 60px;
+  color: white;
+ }
+ /* 底部的按钮 */
+ .bottom{
+  width: 100%;
+  height: 550px;/* 5×90px */
+
+ }
+ /* 按钮的整体样式 设置高度为90px */
+ .bottom .item{
+  display: inline-block;
+  width: 22%;
+  height: 15%;
+  background-color: #666666;
+  border-radius: 150rpx;
+  margin: 22rpx 13rpx 22rpx 10rpx;
+  /* 字体设置 */
+  color: white;
+  text-align: center;
+  line-height: 90px;
+  font-size: 20px;
+  /* 边框设置 */
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+ }
+ .bottom .gray{
+  background-color: gray;
+  color: black;
+ }
+ .bottom .orange{
+  background-color: #f60;
+  color: white;
+ }
+ /* 单独占两个位置 */
+ .bottom .twoItem{
+  width: 46%;
+ }

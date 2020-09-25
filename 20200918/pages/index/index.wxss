@@ -1,0 +1,10 @@
+view{
+  display: inline;
+}
+input{
+  border: 2rpx  solid black ;
+
+}
+.p{
+  color: blue;
+}
