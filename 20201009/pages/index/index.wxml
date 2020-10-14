@@ -1,0 +1,9 @@
+<movable-area scale-area="true">
+
+<movable-view direction="horizontal" x="200">
+  sha
+</movable-view>
+<movable-view direction="horizontal" x="200">
+  sha
+</movable-view>
+</movable-area>

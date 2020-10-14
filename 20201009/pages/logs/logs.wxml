@@ -1,0 +1,37 @@
+<!-- https://video.pearvideo.com/mp4/third/20200921/cont-1698243-11905134-173810-hd.mp4 -->
+<!--https://kvideo01.youju.sohu.com/15fc35e5-de41-412e-b1d9-ba0a0b6f3c0e1_0_0.mp4 -->
+<!-- https://video.pearvideo.com/mp4/third/20201010/cont-1700946-10453553-085728-hd.mp4 -->
+<view class="page-body">
+  <view class="page-section tc">
+
+ <video 
+      id="myVideo" 
+      src="{{src}}" 
+      binderror="videoErrorCallback" 
+      danmu-list="{{danmuList}}" 
+      enable-danmu 
+      danmu-btn 
+      show-center-play-btn='{{false}}' 
+      show-play-btn="{{true}}" 
+      controls
+      picture-in-picture-mode="{{['push', 'pop']}}"
+      bindenterpictureinpicture='bindVideoEnterPictureInPicture'
+      bindleavepictureinpicture='bindVideoLeavePictureInPicture'
+      autoplay="true"
+    ></video>
+
+   <swiper indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="change">
+        
+          <swiper-item wx:for="{{video}}">{{item.name}}</swiper-item>
+      </swiper>
+
+      
+    
+    <view style="margin: 30rpx auto" class="weui-label">弹幕内容</view>
+    <input bindblur="bindInputBlur" class="weui-input" type="text" placeholder="在此处输入弹幕内容" />
+    <button   bindtap="bindSendDanmu" class="page-body-button1" type="primary" formType="submit">发送</button>
+    <button type="primary" class="page-body-button" bindtap="bindPlayVideo">小窗</button>
+  
+  </view>
+</view>
