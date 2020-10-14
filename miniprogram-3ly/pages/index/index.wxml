@@ -1,0 +1,101 @@
+<!--index.wxml-->
+<view style="display:flex">
+  <view class="swiper_unit">
+    <view class="swiper_words">系统登录</view>
+    <view wx:if="{{loginSwitched}}" class="blueOne"></view>
+    <view wx:if="{{!loginSwitched}}" class="greyOne"></view>
+  </view>
+
+  <view class="swiper_unit">
+    <view class="swiper_words">系统注册</view>
+    <view wx:if="{{registerSwitched}}" class="blueOne"></view>
+    <view wx:if="{{!registerSwitched}}" class="greyOne"></view>
+  </view>
+
+</view>
+
+
+<swiper style="height:667px;width:100%;" indicator-dots="true" bindchange="test">
+  <swiper-item id="login">
+    <form>
+      <view class="input-view">
+        <view class="f_font"> 用户名：</view><input placeholder="请输入用户名" />
+      </view>
+      <view class="input-view">
+        <view class="f_font"> 密码：</view><input placeholder="请输入密码" password="true" />
+      </view>
+
+      <view style="display:flex; margin:30rpx;">
+        <button formType="submit" class="form-button" style="width:30%;">提交</button>
+        <button formType="reset" class="form-button" style="width:30%;">重置</button>
+      </view>
+
+    </form>
+  </swiper-item>
+
+  <swiper-item id="register">
+    <form>
+      <view class="input-view">
+        <view class="f_font"> 用户名：</view><input placeholder="请输入用户名" />
+      </view>
+      <view class="input-view">
+        <view class="f_font"> 密码：</view><input placeholder="密码应大于8位" password="true" />
+      </view>
+      <view class="input-view">
+        <view class="f_font"> 性别：</view>
+        <radio-group>
+          <radio value="male" checked="true" style="margin-right:20rpx;">男</radio>
+          <radio value="female">女 </radio>
+        </radio-group>
+      </view>
+      <view class="input-view">
+        <view class="f_font"> 爱好：</view>
+        <checkbox-group>
+          <checkbox value="exercise" style="margin-right:20rpx;">体育</checkbox>
+          <checkbox value="music" style="margin-right:20rpx;">音乐</checkbox>
+          <checkbox value="art">美术</checkbox>
+        </checkbox-group>
+      </view>
+      <view class="input-view">
+        <view class="f_font"> 国籍：</view>
+        <picker value="{{nationalityIndex}}" bindchange="nationalityChange" range="{{nationalityArray}}">
+          {{nationalityArray[nationalityIndex]||"请选择您的国籍"}}
+        </picker>
+      </view>
+
+      <view>
+        <view>
+          <picker mode="date" bindchange="dateChange" end="2020-10-14">
+            <view class="input-view">
+              <view class="f_font"> 生日：</view>{{year}} 年 {{month}} 月 {{day}} 日
+            </view>
+          </picker>
+        </view>
+      </view>
+
+      <view wx:if="{{isChinese}}">
+        <picker mode="region" bindchange="regionChange">
+          <view class="input-view">
+            <view class="f_font"> 籍贯：</view>
+            <view> {{region||"请选择您所在的地区"}} </view>
+          </view>
+        </picker>
+      </view>
+
+      <view class="input-view">
+        <view class="f_font"> 年龄：</view> {{age||"输入生日后系统自动计算年龄"}}
+      </view>
+
+      <view class="input-view">
+        <view class="f_font"> 确认以上信息真实：</view>
+        <switch bindchange></switch>
+      </view>
+
+      <view style="display:flex; margin:30rpx;">
+        <button formType="submit" class="form-button" style="width:30%;">提交</button>
+        <button formType="reset" class="form-button" style="width:30%;">重置</button>
+      </view>
+
+    </form>
+  </swiper-item>
+</swiper>
