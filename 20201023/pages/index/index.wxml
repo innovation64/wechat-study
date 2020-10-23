@@ -1,0 +1,32 @@
+<view class="container">
+
+<view class="t1">
+<view wx:for="{{category}}" class="{{i==item.id?'t11':'t12'}}" bindtap="tap"  data-id="{{item.id}}">{{item.name}}</view>
+
+</view>
+
+<view class="t2" hidden="{{i==1? '':'true'}}">
+  <view class="t22" wx:for="{{ph}}"> </view>
+</view>
+
+<view class="t2" hidden="{{i==2? '':'true'}}">  
+    <view class="t22" wx:for="{{ph1}}"> </view>
+</view>
+
+<view class="t2" hidden="{{i==3? '':'true'}}">  
+    <view class="t22" wx:for="{{ph2}}"> </view>
+</view>
+
+<view class="t2" hidden="{{i==4? '':'true'}}">  
+    <view class="t22" wx:for="{{ph3}}"> </view>
+ </view>
+
+<view class="t2" hidden="{{i==5? '':'true'}}">  
+    <view class="t22" wx:for="{{ph4}}"> </view>
+ </view>
+
+<view class="t2" hidden="{{i==6? '':'true'}}">  
+    <view class="t22" wx:for="{{ph5}}"> </view>
+ </view>
+
+</view>

@@ -1,0 +1,10 @@
+<!--logs.wxml-->
+<view class="container">
+
+
+<view wx:for="{{category}}" class="{{i==item.id?'t11':'t12'}}" bindtap="tap"  data-id="{{item.id}}"><navigator url=" ">{{item.name}}</navigator></view>
+
+
+
+
+</view>
