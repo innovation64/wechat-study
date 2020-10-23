@@ -1,0 +1,38 @@
+page{
+  height: 100%;
+  background-color: black;
+}
+scroll-view{
+  height: 100%;
+  white-space: nowrap;
+}
+image{
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+}
+.t2{
+  display: inline-block;
+  color:white;
+  font-size: 1em;
+  margin-left: 10rpx;
+}
+.t1{
+
+  display: inline-block;
+  color:yellow;
+  font-size: 1.5em;
+  margin-left: 10rpx;
+
+}
+.na{
+  height: 5%;
+  white-space: nowrap;
+  width: 20%;
+}
+.s1{
+  height: 95%;
+}
+.s2{
+  height: 5%;
+}

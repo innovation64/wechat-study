@@ -1,0 +1,24 @@
+<!--index.wxml-->
+
+<scroll-view class="na" scroll-x="true" bindscroll="scroll" style="width: 100%" >
+<view wx:for="{{film}}" data-img="{{item.img}}" bindtap="tap" class="{{i==item.img?'t1':'t2'}}" >{{item.name}}</view>
+</scroll-view>
+
+
+<!-- <scroll-view scroll-x="true" bindscroll="scroll" style="width: 100%" scroll-into-view="photo{{i}}" scroll-with-animation>
+  <image wx:for="{{film}}" src="/image/photo{{item.img}}.jpg" mode="aspectFill" id="photo{{item.img}}"> </image>
+</scroll-view> -->
+
+<!-- <swiper autoplay="ture" class="s2"> 
+<swiper-item class="na"  wx:for="{{film}}">
+<view wx:for="{{film}}" data-img="{{item.img}}" bindtap="tap" class="{{i==item.img?'t1':'t2'}}" >{{item.name}}</view>
+</swiper-item>
+</swiper> -->
+
+<swiper autoplay="ture" indicator-color="#ff3" indicator-dots="true" indicator-active-color="#f60" class="s1" current="{{i-1}}" bindchange="nav">
+<swiper-item  wx:for="{{film}}">
+<image src="/image/photo{{item.img}}.jpg" mode="aspectFill" id="photo{{item.img}}"> </image>
+
+</swiper-item>
+</swiper>
+
