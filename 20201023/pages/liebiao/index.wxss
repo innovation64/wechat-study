@@ -1,0 +1,32 @@
+page{
+  background-color: #f30;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.one{
+  width:30%;
+  height: 100rpx;
+  border: yellow thin solid;
+  border-radius:10rpx;
+}
+
+.two{
+  width:65%;
+  height: 100rpx;
+  border:yellow thin solid;
+  display: flex;
+  font-size: 0.7em;
+  color:white;
+  justify-content: space-between;
+  align-items: center;
+  border-radius:10rpx;
+}
+
+
+image{
+  width:100%;
+  height:100rpx;
+}

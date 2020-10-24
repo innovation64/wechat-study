@@ -1,0 +1,9 @@
+<block wx:for="{{content}}">
+    <view class="one">
+        <!-- <image src="{{item.img}}" mode="aspectFill"></image> -->
+    </view>
+    <view class="two">
+        <view>{{item.title}}</view>
+        <view>{{item.date}}</view>
+    </view>
+</block>

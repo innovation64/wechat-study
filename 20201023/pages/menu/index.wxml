@@ -1,0 +1,5 @@
+<view wx:for="{{content}}" class="box">
+    <view class="cell" bindtap="navigate" data-url="{{item.url}}">
+        {{item.name}}
+    </view>
+</view>

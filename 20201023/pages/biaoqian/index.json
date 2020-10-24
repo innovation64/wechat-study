@@ -1,0 +1,8 @@
+{
+  "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#f30",
+    "navigationBarTitleText": "网购标签式",
+    "navigationBarTextStyle":"black",
+  
+  "usingComponents": {}
+}

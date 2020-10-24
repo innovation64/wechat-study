@@ -1,15 +1,18 @@
 {
-  "pages":[
-    "pages/index/index",
-    "pages/logs/logs"
-  
+  "pages": [
+    
+    "pages/menu/index",
+    "pages/gongge/index",
+    "pages/liebiao/index",
+    "pages/biaoqian/index",
+    "pages/duobanmian/index"
     
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "智障网购",
-    "navigationBarTextStyle":"black"
+    "navigationBarTitleText": "网购",
+    "navigationBarTextStyle": "black"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

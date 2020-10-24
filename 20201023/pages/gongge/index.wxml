@@ -1,0 +1,5 @@
+<view class="box">
+  <view wx:for="{{content}}" class="cell">
+
+  </view>
+</view>

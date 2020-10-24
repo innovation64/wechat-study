@@ -1,0 +1,22 @@
+page{
+  background-color: #f30;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 60%;
+}
+
+.box{
+  width:80%;
+  height: 100rpx;
+  border:yellow thin solid;
+  display: flex;
+  font-size: 1em;
+  color:black;
+  align-items: center;
+  justify-content: center;
+  border-radius:10rpx;
+}
+
